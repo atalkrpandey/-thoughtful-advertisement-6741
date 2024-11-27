@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link
+    rel="shortcut icon"
+    href="https://www.jiomart.com/assets/smartweb/favicon.svg"
+    type="image/x-icon"
+  />
+  <title>Buy Grocery Online at Best Prices Pan India</title>
+    <link rel="stylesheet" href="./P_style.css">
+    <link rel="stylesheet" href="./navbar.css">
+</head>
+<body>
+    
+   <audio src="./login_successful.mp3" id="login_successful"></audio>
+   <div id="navigation" style="height:120px;"></div>
+    <div id="P_container">
+        <div id="P_image">
+            <img src="https://www.jiomart.com/msassets/images/login-banner.jpg" alt="">
+        </div>
+
+        <div id="popup">
+            <img src="https://cdn.dribbble.com/users/11783/screenshots/3492735/animation.gif" alt="">
+        </div>
+
+
+        <div id="P_form">
+        <h2>Sign in</h2>
+        <p>Sign in to access your Orders, Offers and Wishlist.</p>
+
+       
+         <div id="P_input"> <span>+91 |</span> <input type="number" id="P_number_input" placeholder="Enter your mobile no"></div> 
+
+           <div id="circlrArrow" style="border: none; margin-left: 30%;  margin-top: 35px;">
+           <i class="fa-solid fa-circle-chevron-right" style="color: rgb(0, 142, 204); font-size: 45px;"></i>
+           </div>
+        </div>
+   
+</div>
+
+<div id="sa-footer"></div>
+</body>
+</html>
+<script src="./P_index.js"></script>
+<script src="../P_ProductDetailsPage/navbar2.js" type="module"></script>
+<script type="module">
+    import footer from "../P_ProductDetailsPage/footer.js"
+        let footeContainer = document.querySelector('#sa-footer');
+        footeContainer.innerHTML = footer()
+      
+</script>
