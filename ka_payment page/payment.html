@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <title>Payment</title>
+  <style>
+    * {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  /* font-family: system-ui; */
+  /* background: #f6f6f7; */
+
+}
+#ka_background{
+  background-color: #f6f6f7;
+}
+#ka_pa_navbar {
+  width: 100%;
+  height: 55px;
+  /* border: 1px solid red; */
+  background-color: #008ecc;
+
+}
+#ka_pa__title {
+  padding-left: 120px;
+  color: #fff;
+  font-size: 2rem;
+}
+#ka_pa_beta {
+  color: #fff;
+  padding-left: 200px;
+}
+
+
+#ka_pa_order {
+  margin: auto;
+  margin-top: 2%;
+  border: 1px solid red;
+  width: 90%;
+  height: 550px;
+}
+#ka_pa_ordersummart {
+  /* border: 1px solid black; */
+  height: 8%;
+  width: 95%;
+  margin: auto;
+  margin-top: 2%;
+
+  display: flex;
+  /* border-radius: 10%; */
+}
+#ka_pa_ordersummart > h3 {
+  font-size: 1.5rem;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+#ka_cart_image {
+  width: 30px;
+}
+#ka_cart_image3 {
+  width: 40px;
+  padding-top: 7px;
+  background-color: transparent;
+}
+#ka_cart_image1 {
+  width: 30px;
+  background-color: transparent;
+  padding-top: 2%;
+}
+#ka_cart_image2 {
+  width: 30px;
+  padding-top: 1%;
+  background-color: transparent;
+}
+
+
+
+
+
+/* -----------------------------------Font Awesome--------------------------------- */
+#ka_pa_threelogo {
+  display: flex;
+  padding-left: 52%;
+  padding-top: 4%;
+   /* border:1px solid red; */
+  /* padding-top: 5px; */
+  gap: 70px;
+}
+.ka_pa_logos {
+  text-decoration: none;
+  color: blue;
+}
+
+
+
+
+
+#ka_below_order {
+  display: flex;
+  height: 400px;
+  gap: 22px;
+  /* border:1px solid blue; */
+  margin-top: 2%;
+  /* width:5%; */
+}
+#ka_Delivey_Address {
+  border: 1px solid green;
+  width: 58%;
+  height: 420px;
+  margin-left: 2.5%;
+  margin-top: 2%;
+}
+
+
+
+ /* #ka_pa_wallet{
+  margin: auto;
+  margin-top: 1%;
+  background-color: #fff;
+   width:90%;
+   border:1px solid black;
+   height: 400px;
+ } */
+ #ka_payment_methods{
+   display: flex;
+ }
+ #paytm_image{
+  width:40px
+ }
+ .ka_details{
+  font-size: 2rem;
+ }
+
+#plus {
+  margin-left: 80%;
+  /* width: 150px; */
+}
+#minus {
+  margin-left: 60%;
+  /* width: 150px; */
+}
+
+#fashion{
+font-size: 30px;
+margin-left: 5%;
+}
+#ka_cost{
+  margin-left: 80%;
+  margin-top: -10px;
+  /* border: 1px solid red; */
+  /* margin-top: 10%; */
+ }
+
+
+/* Js part styling  */
+#ka_itemsfromCart{
+  margin: auto;
+  margin-top: 1%;
+  margin-left: -3%;
+  background-color: rgb(241, 239, 239);
+   width:100%;
+   /* border:1px solid teal; */
+   height: 320px;
+   border-radius: 3%;
+   
+ }
+ .iteam_box{
+  display: flex;
+  margin: auto;
+
+}
+.ka_itemImage{
+  width:80%;
+  height: 200px;
+  margin-left: 7%;
+  margin-top: 12%;
+}
+#ka_itemDetails{
+  margin: auto;
+  margin-top: 5%;
+
+  font-size: 1.2rem;
+}
+#ka_itemDetails_price{
+  display: flex;
+  gap: 20px;
+  margin-top: 2%;
+}
+
+
+
+
+
+
+
+
+
+
+#ka_Payment {
+  /* border: 1px solid pink; */
+  width: 38%;
+  /* margin-top: 2%; */
+  margin-left: -2%
+}
+.ka_bag{
+  border-radius: 1%;
+  margin: auto;
+  margin-top: 7%;
+ 
+  margin-left: 2%;
+  width:95%;
+      height: 53%;
+  background-color: rgb(241, 239, 239);
+  border-radius: 3%;
+
+  padding-left:20px ;
+}
+
+#plus{
+/* border: 1px solid red; */
+font-size: 200%;
+/* background: #008ecc; */
+/* background: transparent; */
+}
+#minus{
+font-size: 200%;
+margin-left:-130px;
+/* background: #008ecc;  */
+
+
+
+
+}
+
+
+#ka_coupon{
+  width:95%;
+  /* border:1px solid red; */
+  margin: auto;
+  height: 40%;
+  border-radius: 3%;
+  
+  margin-top: 2%;
+  background-color: rgb(241, 239, 239);
+
+
+ 
+}
+
+  #ka_coupon_flex{
+     padding-left: 5%;
+    padding-top: 5%;
+    display: flex;
+    /* justify-content: space-evenly; */
+    gap:200px
+
+  }
+  #ka_coupon_flex2{
+    display: flex;
+    margin-top: 10%;
+    padding-left: 5%;
+    gap:20px;
+
+
+  }
+  #ka_coupon_flex2>p{
+    padding-left: 22%;
+  }
+  #input_coupon{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background-color: transparent;
+    width: 50%;
+  }
+
+
+
+
+
+  .ka_pay_details{
+    padding-top: 6%;
+    padding-left: 3%;
+   
+
+  }
+
+
+  .inputdivs{
+    color: black;
+  }
+  .inputdivs>button{
+    width:3%;
+    height: 25px;
+
+     /* position: sticky; */
+    margin-left:510px;
+    
+  
+
+ 
+   color: black ;
+   
+
+
+
+  
+
+  }
+  .apply{
+    color:red
+  }
+  .greensave{
+    margin-left: 65%;
+  }
+</style>
+</head>
+<body>
+  <div id="ka_pa_navbar">
+    <h3 id="ka_pa__title">JioMart</h3>
+    <h5 id="ka_pa_beta">BETA</h5>
+  </div>
+  <div id="ka_background">
+    <div id="ka_pa_order">
+      <div id="ka_pa_ordersummart">
+        <h3>Payment</h3>
+        <div id="ka_pa_threelogo">
+          <div >
+          
+            <i class="fa-solid fa-cart-plus"></i>
+            <a class="ka_pa_logos" href="#">Your Cart</a>
+            
+
+
+          </div>
+          
+          <div>
+        
+              <i class="fa-solid fa-list-check"></i>
+            <a class="ka_pa_logos" href="#">Order Summary</a>
+          </div>
+          <div>
+          
+            <i class="fa-solid fa-credit-card"></i>
+            <a class="ka_pa_logos" href="#">Payment</a>
+          </div>
+        </div>
+      </div>
+      <div id="ka_below_order">
+         
+        <div id="ka_Delivey_Address">
+          <div id="ka_fashion_basket">
+              <h2 id="fashion">Prodcut Basket</h2>
+              
+            </div>
+           
+             
+          <div id="ka_itemsfromCart_main">
+              
+            
+                <!-- ATM DETAILS -->
+
+
+
+          </div>
+          
+         
+         
+        </div>
+        <div id="ka_Payment">
+
+          
+           <!-- <div id="ka_coupon">
+            <div id="ka_coupon_flex">
+              <h3 id="ka_apply">Apply Coupon</h3>
+              <p class="apply" >VIEW ALL</p>
+            </div>
+
+            <div id="ka_coupon_flex2">
+              <i class="fa-solid fa-percent"></i>
+
+              <input type="text" id="input_coupon"   placeholder="Enter Coupon Code " >
+              <p class="apply">Apply</p>
+            </div>
+              
+           </div> -->
+          
+           
+
+        </div>
+      </div>
+    </div>
+      </div> 
+  </div>
+   
+</body>
+</html>
+
+<script>
+
+
+  // right side box start 
+
+// let products = JSON.parse(localStorage.getItem("products"))||[];
+let MRP = JSON.parse(localStorage.getItem("MRP"))||[];
+  let ka_payment=document.getElementById("ka_Payment")
+
+   let ka_bag=document.getElementById("ka_bag")
+
+  let append=(MRP)=>{
+    console.log(MRP)
+    MRP.forEach((el)=>{
+       console.log(el.MRP)
+        let ka_bag=document.createElement("div");
+       ka_bag.setAttribute("class","ka_bag");
+       let h=document.createElement("h3");
+       h.setAttribute("class","ka_pay_details")
+       h.innerText="Payment Details"
+       let h2=document.createElement("p");
+       h2.setAttribute("class","ka_pay_details")
+       let bar=document.createElement("hr")
+       let h3=document.createElement("p");
+       let bar1=document.createElement("hr")
+       h3.setAttribute("class","ka_pay_details")
+       let h4=document.createElement("h3");
+       h4.setAttribute("class","ka_pay_details")
+       h2.innerText=`MRP Total:${el.MRP}`
+       console.log(MRP.product)
+
+     
+    // h2.innerText=null
+    h2.setAttribute("id","oldprice_id")
+       h3.innerText=` Product Disscount:${el.priceold-el.pricenew}`
+       h3.setAttribute("id","saveprice_id")
+
+       h4.innerText=`Total Amount:${el.product}  `
+       h4.setAttribute("id","total_amount")
+       let p4=document.createElement("p");
+       p4.innerText=`You Can Save ₹${el.priceold-el.pricenew}`
+      p4.style.color="green"
+      p4.setAttribute("class","greensave")
+       ka_bag.append(h,h2,bar,h3,bar1,h4,p4);
+       ka_payment.append(ka_bag)
+    })
+    
+       
+  }
+  append(MRP);
+
+
+  // right side box end
+</script>
