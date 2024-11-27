@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.jiomart.com/assets/smartweb/favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./P_style.css">
+    <link rel="stylesheet" href="./navbar.css">
+    <!-- <link rel="stylesheet" href="./navbar2.css"> -->
+    <title>TX</title>
+</head>
+
+<body>
+
+    <div id="navigation" style="height:120px;"></div>
+    <div id="P_container1"></div>
+
+    <div id="returnPolicy"  style="width: 90%; height: 15%; border-top: 1px solid gray; margin: auto; margin-bottom: 20px; ">
+
+        <h4 style="margin:10px 0 10px 0 ;">Return Policy</h4>
+        <p>Items are eligible for return within 7 Days of Delivery <a href="https://www.jiomart.com/cancellation-return-refund-policy" style="text-decoration: none; margin:10px 0 10px 0 ;"> (T&C Apply*)</a></p>
+    
+        <p style="margin:10px 0 10px 0 ;">All accessories, product & packaging need to be returned in original condition</p>
+    
+    </div>
+
+    <div id="productRating" style="margin: auto; margin-top: 10px; margin-bottom: 20px; border-top: 1px solid gray; width: 90%; ">
+        <h4 style="margin: 10px 0 20px 0; ">Product Rating</h4>
+        <div id="ratingBox1">
+            <div id="ratingImg">
+                <img src="./rate image.jpeg" alt="" style="margin-left:-10px;">
+            </div>
+
+            <div id="ratingBtns" >
+                <p style="display: flex;">Rate Product <span style="margin-left: 190px; font-size: 20px; display: flex;">
+                    <i class="fa-regular fa-star" id="empty1" onclick="starFunc1()"></i>
+                    <i class="fa-solid fa-star" id="solid1"></i>
+                    <i class="fa-regular fa-star" id="empty2"  onclick="starFunc2()"></i>
+                    <i class="fa-solid fa-star" id="solid2"></i>
+                    <i class="fa-regular fa-star" id="empty3" onclick="starFunc3()"></i>
+                    <i class="fa-solid fa-star" id="solid3"></i>
+                    <i class="fa-regular fa-star" id="empty4" onclick="starFunc4()"></i>
+                    <i class="fa-solid fa-star" id="solid4"></i>
+                    <i class="fa-regular fa-star" id="empty5"  onclick="starFunc5()"></i>
+                    <i class="fa-solid fa-star" id="solid5"></i>
+
+                </span></p>
+
+                <div id="review" style="margin-top: 10px;">
+                    <input type="text" id="reviewInput" style="width: 370px; height: 200px; overflow: hidden;" placeholder="Write Your Review here">
+                </div>
+                <button style="margin-top:8px ; width: 390px; padding: 6px; border: none; border-radius: 5px;" onclick="reviewFunc()">WRITE REVIEW</button>
+              
+            </div>
+        </div>
+    </div>
+
+    <div id="sa-footer"></div>
+
+</body>
+
+</html>
+
+<script src="./P_index.js"></script>
+<script src="./navbar2.js" type="module"></script>
+
+<script type="module">
+    import footer from "./footer.js"
+        let footeContainer = document.querySelector('#sa-footer');
+        footeContainer.innerHTML = footer()
+      
+</script>

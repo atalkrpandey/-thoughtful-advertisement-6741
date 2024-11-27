@@ -1,0 +1,367 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#Anavbar{
+    
+    position: fixed;
+    width: 100%;
+    top: 0;
+    
+}
+
+#Atopnavbar{
+    width: 100%;
+    top: 0;
+    height: 80px;
+    background-color: 
+    #008ecc;
+    color: aliceblue;
+    display: flex;
+    
+}
+#Alogo{
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    margin: 20px;
+    margin-left: 100%;
+}
+#Aweblogo{
+    margin-left: 80px;
+    margin-top: 10%;
+}
+
+#Asearch{
+        height: 40px;
+        width: 500px;
+        padding: 0px 10px;
+        border-radius: 5px;
+        margin-left: 25%;
+        margin-top: 20px;
+    }
+    #Alog_sign{
+        font-size: 20px;
+        margin-left: 13%;
+        margin-top: 13px;
+      
+    }
+    #Auserlogo{
+        width: 30px;
+        height: 30px;
+        background: transparent;
+        margin-right: 10px;
+        position: relative;
+        top:10px
+        
+    }
+    #Alogin{
+        color: aliceblue;
+    }
+    #Asignup{
+        color: aliceblue;
+    }
+    #Acartdiv{
+        font-size: 20px;
+        margin-left: 5%;
+        margin-top: 13px;
+        color: aliceblue;
+    }
+    #Acartlogo{
+        width: 30px;
+        height: 30px;
+        background: transparent;
+        margin-right: 10px;
+        position: relative;
+        top:10px
+        
+    }
+    #Alogodiv{
+       
+        position: relative;
+        cursor: pointer;
+        left: 20px;
+    }
+    #Amenu{
+        display: none;
+        width: 30%;
+        border: 1px solid gray;
+        height: 600px;
+        position: relative;
+        top: -120px;
+        background-color: rgb(252, 252, 252);
+        
+    }
+    #Auserlogo2{
+   width: 30px;
+   height: 30px;
+   margin-right: 20px;
+    }
+    #Amenu h2{
+        padding: 20px;
+    }
+    #Across{
+        position: relative;
+        left: 150px;
+        font-size: 30px;
+        font-weight: 600;
+        width: 30px;
+    }
+    #Amenunav{
+        background-color: #008ecc;
+        color: aliceblue;
+    }
+    #Aaccount{
+        height: 30px;
+        padding: 0px 50px;
+        margin-left: 30px;
+        margin-bottom: 10px;
+        color: aliceblue;
+        background-color: #008ecc;
+        border: 1px solid white;
+    }
+    #Aoffer{
+        height: 30px;
+        padding: 0px 50px;
+        margin-left: 40px;
+        margin-bottom: 10px;
+        color: aliceblue;
+        background-color: #008ecc;
+        border: 1px solid white;
+    }
+    #Aoptions h3{
+        color: rgb(54, 52, 52);
+        margin: 15px 20px;
+        font-weight:lighter;
+
+    }
+    #Asearchdiv{
+        position:absolute;
+        width: 500px;
+        top: 60px;
+        height: 500px;
+        left: 30%;
+        border: 1px solid gray;
+        visibility: hidden;
+        overflow: scroll;
+        background-color:#a3ddf8;
+       
+    }
+    .AappendName{
+        display: flex;
+        border: 1px solid gray;
+        padding: 20px;
+        cursor: pointer;
+    }
+    #Aclose{
+        position:absolute;
+        padding: 10px;
+        left: 93%;
+        
+        
+    }
+    #Adel{
+        width: 100px;
+    }
+    #Asearchbar{
+      position: relative;
+      left: 114%;
+      font-size: 25px;
+      top: -35px;
+      background-color: aliceblue;
+      border: none;
+      cursor: pointer;
+    }
+    #Asearchlogo{
+        width: 20px;
+        height: 20px;
+    }
+    .sa-menu-bar h3{
+        padding-left: 16px;
+        transition: 100ms;
+     
+    }
+    .sa-menu-bar h3:hover{
+        padding-left: 20px;
+        cursor: pointer;
+        background-color: rgba(0,0,0,.2);
+    }
+   
+
+    *{
+        padding: 0px;
+        margin: 0px;
+        /* box-sizing: border-box; */
+    }
+    #Adeliver{
+        width: 150px;
+       display: flex;
+    }
+    #Adeliver h3{
+    color: gray;
+    font-size: 15px;
+    }
+    .Adropdown{
+       
+        width: 100%;
+        margin: auto;
+       
+        background-color: rgb(238, 237, 237);
+      display: flex;
+        text-align: center;
+        height: 40px;
+        padding-left: 2%;
+    }
+    .Adropdown ul{
+        display: inline-flex;
+        z-index: 200;
+    }
+    #Aloimg{
+        width: 20px;
+        height: 40px;
+        margin: 0px 10px 10px 10px;
+    }
+    .Adropdown ul li{
+        width: 160px;
+        margin: 5px 2px;
+        padding: 5px 0px;
+        list-style: none;
+        cursor: pointer;
+    }
+    .Ainner{
+        display: flex;
+        
+        padding: 10px;
+        background-color: rgb(238, 237, 237);
+        display: none;
+       
+    }
+    .Ainner1{
+        width: 200px;
+        display: none;
+    }
+    .Ainner2{
+        width: 200px;
+        display: none;
+    }
+    .Adropdown>ul>li:hover{
+       background-color: #94b4db;
+       
+    }
+    .Adropdown ul li:hover .Ainner{
+        display: block;
+        width: 400px;
+        display: flex;
+    
+       
+    }
+    .Adropdown ul li:hover .Ainner1{
+        display: block;
+       
+    }
+    .Ainner1 ul{
+      
+       display: grid;
+       grid-template-columns: repeat(1,1fr);
+       background-color: rgb(238, 237, 237);
+    }
+    .Adropdown ul li:hover .Ainner2{
+        display: block;
+        position: relative;
+        /* left: 51px; */
+       
+    }
+    .Ainner2 ul{
+     
+       display: grid;
+       grid-template-columns: repeat(1,1fr);
+       background-color: rgb(238, 237, 237);
+    }
+    .Ahr{
+        position: relative;
+        /* left: 50px; */
+    }
+    .Ainner2 ul li{
+        width: 90%;
+        padding: 5px 10px;
+        margin: 10px 20px;
+        text-align: left;
+    }
+    .Ainner1 ul li{
+        width: 90%;
+        padding: 5px 10px;
+       margin: 10px 20px;
+       text-align: left;
+    }
+    .Ainner2 ul li:hover{
+        background-color: rgb(255, 255, 255);
+        
+        color: #0e72ed;
+        cursor: pointer;
+       
+       
+    }
+    .Ainner1 ul li:hover{
+        background-color: rgb(255, 255, 255);
+        color: #0e72ed;
+        cursor: pointer;
+       
+    }
+
+    /* //////////////////////////// FOOTER /////////////////////////// */
+
+
+#sa-footer-container {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    background: rgba(21, 27, 57, .08);
+    margin-top: 3%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+#sa-footer-container .sa-footer-box {
+    width: 25%;
+    height: 90%;
+    line-height: 30px;
+    padding-left: 1%;
+}
+
+#sa-footer-container .sa-footer-box h5 {
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+#sa-footer-container .sa-footer-box p {
+    color: grey;
+}
+
+#sa-footer-container .sa-footer-box #download {
+    margin: 0 20px;
+    text-align: center;
+}
+#sa-footer-container .sa-footer-box:nth-child(1), #sa-footer-container .sa-footer-box:nth-child(2){
+    line-height: 5px;
+}
+#sa-footer-container .sa-footer-box:last-child {
+    border-left: 1px solid rgba(128, 128, 128, 0.254);
+    margin-right: 1%;
+}
+
+#sa-footer-end {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    border-top: 1px solid rgba(128, 128, 128, 0.254);
+    background: rgba(21, 27, 57, .08);
+}
