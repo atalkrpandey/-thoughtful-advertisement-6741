@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <title>Cart Page</title>
+    <style>
+          * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        /* font-family: system-ui; */
+        /* background: #f6f6f7; */
+      
+      }
+      #ka_background{
+        background-color: #f6f6f7;
+      }
+      #ka_pa_navbar {
+        width: 100%;
+        height: 55px;
+        border: 1px solid red;
+        background-color: #008ecc;
+    
+      }
+      #ka_pa__title {
+        padding-left: 120px;
+        color: #fff;
+        font-size: 2rem;
+      }
+      #ka_pa_beta {
+        color: #fff;
+        padding-left: 200px;
+      }
+      #ka_pa_order {
+        margin: auto;
+        margin-top: 2%;
+        border: 1px solid red;
+        width: 90%;
+        height: 550px;
+      }
+      #ka_pa_ordersummart {
+        border: 1px solid black;
+        height: 8%;
+        width: 95%;
+        margin: auto;
+        margin-top: 2%;
+
+        display: flex;
+        /* border-radius: 10%; */
+      }
+      #ka_pa_ordersummart > h3 {
+        font-size: 1.5rem;
+        padding-left: 20px;
+        padding-top: 10px;
+      }
+      #ka_cart_image {
+        width: 30px;
+      }
+      #ka_cart_image3 {
+        width: 40px;
+        padding-top: 7px;
+        background-color: transparent;
+      }
+      #ka_cart_image1 {
+        width: 30px;
+        background-color: transparent;
+        padding-top: 2%;
+      }
+      #ka_cart_image2 {
+        width: 30px;
+        padding-top: 1%;
+        background-color: transparent;
+      }
+      #ka_pa_threelogo {
+        display: flex;
+        padding-left: 50%;
+        /* padding-top: 5px; */
+        gap: 20px;
+      }
+      .ka_pa_logos {
+        text-decoration: none;
+        color: black;
+      }
+      #ka_below_order {
+        display: flex;
+        height: 400px;
+        gap: 22px;
+        /* border:1px solid blue; */
+        margin-top: 2%;
+        /* width:5%; */
+      }
+      #ka_Delivey_Address {
+        border: 1px solid green;
+        width: 58%;
+        height: 420px;
+        margin-left: 2.5%;
+        margin-top: 2%;
+      }
+      .iteam_box{
+        display: flex;
+      }
+      #ka_Payment {
+        border: 1px solid pink;
+        width: 35%;
+        margin-top: 2%;
+      }
+       #ka_itemsfromCart{
+        margin: auto;
+        margin-top: 1%;
+        background-color: #fff;
+         width:90%;
+         border:1px solid teal;
+         height: 250px;
+         
+       }
+       /* #ka_pa_wallet{
+        margin: auto;
+        margin-top: 1%;
+        background-color: #fff;
+         width:90%;
+         border:1px solid black;
+         height: 400px;
+       } */
+       #ka_payment_methods{
+         display: flex;
+       }
+       #paytm_image{
+        width:40px
+       }
+       .ka_details{
+        font-size: 2rem;
+       }
+       #ka_cost{
+        margin-left: 80%;
+        /* margin-top: 10%; */
+       }
+      #plus {
+        margin-left: 80%;
+        /* width: 150px; */
+      }
+      #minus {
+        margin-left: 60%;
+        /* width: 150px; */
+      }
+    </style>
+</head>
+<body>
+     <div id="ka_pa_navbar">
+        <h3 id="ka_pa__title">JioMart</h3>
+        <h5 id="ka_pa_beta">BETA</h5>
+      </div>
+      <div id="ka_background">
+      <div id="ka_pa_order">
+        <div id="ka_pa_ordersummart">
+          <h3>My Cart</h3>
+          <div id="ka_pa_threelogo">
+            <div>
+             
+              <i class="fa-solid fa-cart-plus"></i>
+             
+              <a class="ka_pa_logos" href="#">Your Cart</a>
+
+            </div>
+            <div>
+          
+                <i class="fa-solid fa-list-check"></i>
+              <a class="ka_pa_logos" href="#">Your Cart</a>
+            </div>
+            <div>
+            
+              <i class="fa-solid fa-credit-card"></i>
+              <a class="ka_pa_logos" href="#">Your Cart</a>
+            </div>
+          </div>
+        </div>
+        <div id="ka_below_order">
+           
+          <div id="ka_Delivey_Address">
+            <div id="ka_fashion_basket">
+                <h2>Fashion Basket</h2>
+                <p id="ka_cost">₹ 499.00</p> 
+              </div>
+             
+            
+            <div id="ka_itemsfromCart">
+                
+              
+              
+
+
+
+            </div>
+            
+           
+            <!-- <div id="ka_pa_wallet">
+                 <div id="ka_payment_methods">
+                    <img id="paytm_image" src="https://www.jiomart.com/assets/pgicon/Paytm_lo.png" alt="">
+                    <p class="ka_details">Paytm</p>
+                 </div>
+            </div> -->
+          </div>
+          <div id="ka_Payment">
+
+             <h2>Payment Details</h2>
+
+          </div>
+        </div>
+      </div>
+        </div> 
+    </div>
+     
+</body>
+</html>
+<script>
+   
+    let items = JSON.parse(localStorage.getItem("items")) || [];
+   let rendorDom=()=>{
+    let ka_itemsfromCart=document.getElementById("ka_itemsfromCart")
+    ka_itemsfromCart.innerHTML=null;
+    items.forEach((el,index)=>{
+      // divs creating
+      let bag=document.createElement("div");
+      bag.setAttribute("class","iteam_box");
+      let imag_div=document.createElement("div")
+      let ka_itemDetails_div=document.createElement("div")
+      ka_itemDetails_div.setAttribute("id","ka_itemDetails")
+      
+
+// divs end
+      let img=document.createElement("img");
+      img.setAttribute("class","ka_itemImage")
+      img.src=el.image;
+      imag_div.append(img)
+      let h3=document.createElement("h3");
+      let p1=document.createElement("p");
+      let p2=document.createElement("p");
+      let p3=document.createElement("p");
+      let p4=document.createElement("p");
+      p1.innerText=el.name
+      p2.innerText=el.prodcut
+      p3.innerText=el.mrp
+      p4.innerText=el.save
+      let i=document.createElement("i");
+      i.setAttribute("class","fa-solid fa-circle-plus")
+      i.setAttribute("id","plus")
+
+      let i1=document.createElement("i");
+      i1.setAttribute("class","fa-solid fa-circle-minus")
+      i1.setAttribute("id","minus")
+      
+      i.onclick=()=>{
+        inc(el)
+      }
+      i1.onclick=()=>{
+        dec(el)
+      }
+
+    //   let add=document.createElement("button")
+    //   add.innerText="ADD"
+    //   add.onclick=()=>{
+    //     inc(el);
+    //   }
+    //   let h1=document.createElement("h1")
+    //   h1.innerText="kalesha"
+    
+      let rem_btn=document.createElement("button");
+      rem_btn.innerText="Remove"
+      rem_btn.onclick=()=>{
+        dele(index);
+      }
+      ka_itemDetails_div.append(h3,p1,p2,p3,p4)
+      bag.append(imag_div,ka_itemDetails_div)
+      ka_itemsfromCart.append(bag,rem_btn,i,i1)
+    })
+    
+   }
+
+  
+
+rendorDom(items)
+
+
+
+
+
+
+
+
+
+
+let dele=(index)=>{
+    items.splice(index,1);
+    localStorage.setItem("items", JSON.stringify(items));
+    window.location.reload();
+
+   }
+   let ka_payment=document.getElementById("ka_Payment")
+  let append=(items)=>{
+    items.forEach((el)=>{
+        let ka_bag=document.createElement("div");
+       ka_bag.setAttribute("class","ka_bag");
+       let h2=document.createElement("h2");
+       let h3=document.createElement("h2");
+       let h4=document.createElement("h2");
+       h2.innerText=`MRP Total:${el.mrp}`
+    // h2.innerText=null
+    h2.setAttribute("id","oldprice_id")
+       h3.innerText=` Product Disscount:         ${el.save}`
+       h4.innerText=`Total Amount:               ${el.prodcut}  `
+       ka_bag.append(h2,h3,h4);
+       ka_payment.append(ka_bag)
+    })
+    
+       
+  }
+  append(items);
+  let totalprice=0;
+let inc=(el)=>{
+//   console.log("kalesha")
+   totalprice+=el.mrp;
+    let oldprice_id=document.getElementById("oldprice_id");
+    oldprice_id.innerText=`MRP Total:${totalprice}`;
+   
+   console.log(totalprice)
+//    console.log(typeof(el.mrp))
+}
+
+
+
+ let dec=(el,index)=>{
+   totalprice-=el.mrp
+   console.log(totalprice)  
+   let oldprice_id=document.getElementById("oldprice_id");
+    oldprice_id.innerText=`MRP Total:${totalprice}`;
+    if(totalprice<=0){
+        let oldprice_id=document.getElementById("oldprice_id");
+    oldprice_id.innerText="MRP Total:0";
+    dele(index)
+       
+    }
+    
+ }
+
+</script>

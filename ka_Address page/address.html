@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./ka_address.css">
+    <!-- <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        /* font-family: system-ui; */
+        /* background: #f6f6f7; */
+      }
+      #ka_navbar {
+        width: 100%;
+        height: 55px;
+        /* border: 1px solid red; */
+        background-color: #008ecc;
+      }
+      #ka_title {
+        padding-left: 120px;
+        color: #fff;
+        font-size: 2rem;
+      }
+      #ka_beta {
+        color: #fff;
+        padding-left: 200px;
+      }
+      #ka_order {
+        margin: auto;
+        margin-top: 2%;
+        border: 1px solid red;
+        width: 90%;
+        height: 750px;
+      }
+      #ka_ordersummart {
+        border: 1px solid black;
+        height: 6%;
+        width: 95%;
+        margin: auto;
+        margin-top: 2%;
+
+        display: flex;
+        /* border-radius: 10%; */
+      }
+      #ka_ordersummart > h3 {
+        font-size: 1.5rem;
+        padding-left: 20px;
+        padding-top: 10px;
+      }
+      #ka_cart_image {
+        width: 30px;
+      }
+      #ka_cart_image3 {
+        width: 40px;
+        padding-top: 7px;
+        background-color: transparent;
+      }
+      #ka_cart_image1 {
+        width: 30px;
+        background-color: transparent;
+        padding-top: 2%;
+      }
+      #ka_cart_image2 {
+        width: 30px;
+        padding-top: 1%;
+        background-color: transparent;
+      }
+      #ka_threelogo {
+        display: flex;
+        padding-left: 50%;
+        /* padding-top: 5px; */
+        gap: 20px;
+      }
+      .ka_logos {
+        text-decoration: none;
+        color: black;
+      }
+      #ka_Delivey_Address {
+        border: 1px solid green;
+        width: 58%;
+        height: 650px;
+        margin-left: 2.5%;
+      }
+      .ka_box {
+        color: #212529;
+        background-color: #d5d5fd;
+        width: 60%;
+        height: 200px;
+        margin-left: 7%;
+        margin-top: 3%;
+        padding-left: 9%;
+        padding-top: 3%;
+      }
+      #ka_Basket {
+        border: 1px solid teal;
+        width: 100%;
+        height: 200px;
+        margin-top: 20%;
+        background-color: #fff;
+      }
+      #ka_Payment {
+        border: 1px solid pink;
+        width: 35%;
+      }
+      #ka_below_order {
+        display: flex;
+        height: 400px;
+        gap: 22px;
+        /* border:1px solid blue; */
+        /* width:5%; */
+      }
+      #Adress_details {
+        position: absolute;
+        /* position: relative; */
+
+        display: none;
+        width: 23%;
+        height: 750px;
+        background-color: #fff;
+        /* border: 1px solid yellow; */
+
+        left: 70%;
+        text-align: center;
+      }
+      #ka_input {
+        margin-top: 20px;
+        width: 100%;
+        height: 30px;
+        background-color: #c3c3d6;
+      }
+      .input_feild {
+        margin-top: 20px;
+        width: 100%;
+        height: 30px;
+      }
+      .btn_box {
+        background-color: red;
+        color: #fff;
+        text-decoration: none;
+        border: none;
+        width: 20%;
+        height: 12%;
+      }
+      #ka_address_box {
+        margin-left: 68%;
+        width: 27%;
+        height: 5%;
+        border: none;
+        text-decoration: none;
+        background-color: #008ecc;
+      }
+      #ka_basket {
+        display: flex;
+        gap: 65%;
+        background-color: #fff;
+      }
+      #ka_cost {
+        margin-left: 90%;
+      }
+      #ka_itemsfromCart {
+        display: flex;
+        gap: 30px;
+        background-color: #fff;
+      }
+      #ka_itemImage {
+        width: 100px;
+        margin-left: 15px;
+      }
+      #ka_itemDetails {
+        margin-top: 20px;
+        background-color: #fff;
+        /* border: 1px solid red; */
+      }
+      #ka_prize {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      #ka_add_color {
+        background-color: rgb(247, 126, 82);
+      }
+      #ka_deliver_details{
+        /* border:1px solid orangered
+         */
+         background-color: #fff;
+      }
+      #background_ka{
+        background-color: #f6f6f7;
+        /* background-color: red; */
+      }
+      /* #Adress_details>.close-{
+      display: inline-block;
+      background-color: transparent;
+      width: 12%;
+      color: white;
+      font-size: 19px;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      padding: 8px 25px;
+      position: relative;
+      }
+
+
+
+
+
+
+
+      .close-.closex::after{
+      position: absolute;
+      right: 3%;
+      bottom: 8%;
+      content: "-";
+      color: white;
+      font-size: 35px;
+      }
+      .close-.closex:hover:after{
+      position: absolute;
+      right: 3%;
+      bottom: 1%;
+      content: "+";
+      color: white;
+      font-size: 34px;
+      font-weight: bolder;
+      transform: rotate(45deg);
+      } */
+      .fa-cart-minus {
+        border:1px solid red;
+        width:100%
+      }
+    </style> -->
+  </head>
+  <body>
+    <div id="Adress_details">
+      <div id="ka_add_color">
+        <h2>Add Address</h2>
+        <h2> Details</h2>
+        
+        <a href="#" class="close- closex" id="close">CLOSE</a>
+      </div>
+    
+      <div id="ka_input">
+        <input
+          type="text"
+          class="input_feild"
+          id="pincode"
+          placeholder="pin Code*"
+        />
+        <input
+          type="text"
+          class="input_feild"
+          id="flatno"
+          placeholder="Flat/House No."
+        />
+        <input
+          type="text"
+          class="input_feild"
+          id="floorno"
+          placeholder="Floor No."
+        />
+        <input
+          type="text"
+          class="input_feild"
+          id="towerno"
+          placeholder="Tower No."
+        />
+        <input
+          type="text"
+          class="input_feild"
+          id="building"
+          placeholder="Building/Apartment Name"
+        />
+        <input
+          type="text"
+          class="input_feild"
+          id="address"
+          placeholder="Address*"
+        />
+        <input
+          type="text"
+          class="input_feild"
+          id="landmark"
+          placeholder="landmark/Area*"
+        />
+        <input
+          type="text"
+          class="input_feild"
+          id="city"
+          placeholder="City,State"
+        />
+        <h2>Delivery contact Details</h2>
+        <p>will be user to assist Delivery</p>
+        <input
+          type="text"
+          id="name"
+          class="input_feild"
+          placeholder="Enter Your name"
+        />
+
+        <input
+          type="number"
+          class="input_feild"
+          id="number"
+          placeholder="Enter your number"
+        />
+        <p>
+          This mobile number will receive an OTP, required for collecting the
+          order.
+        </p>
+
+        <button class="input_feild" onclick="submit()">Save Address</button>
+      </div>
+    </div>
+    <div id="ka_navbar">
+      <h3 id="ka_title">JioMart</h3>
+      <h5 id="ka_beta">BETA</h5>
+    </div>
+      <div id="background_ka">
+    <div id="ka_order">
+      <div id="ka_ordersummart">
+        <h3>Order Summary</h3>
+        <div id="ka_threelogo">
+          <div>
+            <i class="fa-solid fa-cart-minus"></i>
+            <a class="ka_logos" href="#">Your Cart</a>
+          </div>
+          <div>
+            <img
+              id="ka_cart_image2"
+              src="data:image/jpeg;base64,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"
+              alt=""
+            />
+            <a class="ka_logos" href="#">Your Cart</a>
+          </div>
+          <div>
+            <img
+              id="ka_cart_image3"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyXn0reBWtcMxuN_dZ5TZTr01f_Ph4w_T1Ng&usqp=CAU"
+              alt=""
+            />
+            <a class="ka_logos" href="#">Your Cart</a>
+          </div>
+        </div>
+      </div>
+      <div id="ka_below_order">
+        <div id="ka_Delivey_Address">
+          <div id="ka_deliver_details">
+
+          </div>
+          <button id="ka_address_box">Change/Add Address</button>
+          <div id="ka_Basket">
+            <div id="ka_basket">
+              <h2>Fashion Basket</h2>
+              <h3>Total Cost</h3>
+            </div>
+            <p id="ka_cost">₹ 499.00</p>
+            <hr />
+            <div id="ka_itemsfromCart">
+              <!-- <div>
+                <img
+                  id="ka_itemImage"
+                  src="data:image/jpeg;base64,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"
+                  alt=""
+                />
+              </div>
+              <div id="ka_itemDetails">
+                <h3>
+                  HELLCAT Boys Multicolor Cotton Blend Printed Pack of 2 T-shirt
+                </h3>
+                <p id="ka_prize">₹499.00</p>
+                <p>Size: 3-4 Y</p> -->
+              <!-- </div>  -->
+            </div>
+          </div>
+        </div>
+        <div id="ka_Payment"></div>
+      </div>
+
+      
+    </div>
+
+</div>
+   
+    </script>
+  </body>
+</html>
+<script src="./ka_address.js"></script>
+<!-- <script>
+  function addressd(p, fl, fo, t, b, a, l, c, n, mb) {
+    this.pincode = p;
+    this.flatno = fl;
+    this.floorno = fo;
+    this.towerno = t;
+    this.building = b;
+    this.address = a;
+    this.landmark = l;
+    this.city = c;
+    this.name = n;
+    this.mobile = mb;
+  }
+  let user = JSON.parse(localStorage.getItem("user")) || [];
+
+  let submit = () => {
+    let pincode = document.getElementById("pincode").value;
+    let flatno = document.getElementById("flatno").value;
+    let floorno = document.getElementById("floorno").value;
+    let towerno = document.getElementById("towerno").value;
+    let building = document.getElementById("building").value;
+    let address = document.getElementById("address").value;
+    let landmark = document.getElementById("landmark").value;
+    let city = document.getElementById("city").value;
+    let name = document.getElementById("name").value;
+    let mobile = document.getElementById("number").value;
+    let a1 = new addressd(
+      pincode,
+      flatno,
+      floorno,
+      towerno,
+      building,
+      address,
+      landmark,
+      city,
+      name,
+      mobile
+    );
+    user.push(a1);
+    localStorage.setItem("user", JSON.stringify(user));
+  };
+  //  user=JSON.parse(localStorage.getItem("user"))||[];
+  let append = () => {
+    let ka_deliver_details = document.getElementById("ka_deliver_details");
+    ka_deliver_details.innerHTML=null;
+    user.forEach((el,index) => {
+      let jola = document.createElement("div");
+      jola.setAttribute("class", "ka_box");
+      let h2 = document.createElement("h2");
+      h2.innerText = el.name;
+      let p1 = document.createElement("p");
+      p1.innerText = el.flatno;
+      let p2 = document.createElement("p");
+      p2.innerText = el.floorno;
+      let p3 = document.createElement("p");
+      p3.innerText = el.building;
+      let p4 = document.createElement("p");
+      p4.innerText = el.address;
+      let p5 = document.createElement("p");
+      p5.innerText = el.landmark;
+      let p6 = document.createElement("p");
+      p6.innerText = el.city;
+      let p7 = document.createElement("p");
+      p7.innerText = `91-${el.mobile}`;
+      let btn_set = document.createElement("button");
+      btn_set.setAttribute("class", "btn_box");
+      btn_set.innerText = "Set Default";
+      let remove_btn=document.createElement("button");
+      remove_btn.innerText="Remove"
+      remove_btn.onclick=()=>{
+        del(index);
+      }
+
+      jola.append(h2, p1, p2, p3, p4, p5, p6, p7, btn_set,remove_btn);
+
+      ka_deliver_details.append(jola);
+    });
+  };
+  append(user);
+  document
+    .querySelector("#ka_address_box")
+    .addEventListener("click", function () {
+      document.querySelector("#Adress_details").style.display = "block";
+      //   document.querySelector(".c3").setAttribute("href","myaccount.html");
+    });
+
+
+   document.getElementById("close").addEventListener("click",function(){
+    document.querySelector("#Adress_details").style.display = "none";
+
+   })
+   let del=(index)=>{
+    user.splice(index,1);
+    localStorage.setItem("user", JSON.stringify(user));
+    window.location.reload();
+
+   }
+   let items = JSON.parse(localStorage.getItem("items")) || [];
+   let rendorDom=()=>{
+    let ka_itemsfromCart=document.getElementById("ka_itemsfromCart")
+    items.forEach((el)=>{
+      let bag=document.createElement("div");
+      bag.setAttribute("class","iteam_box");
+      let img=document.createElement("img");
+      img.setAttribute("class","ka_itemImage")
+      img.src=el.image;
+      let h3=document.createElement("h3");
+      let p1=document.createElement("p")
+      bag.append(img)
+      ka_itemsfromCart.append(bag)
+    })
+    
+   }
+rendorDom(items)
+</script> -->
