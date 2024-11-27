@@ -1,0 +1,226 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* font-family: system-ui; */
+    /* background: #f6f6f7; */
+  }
+  #ka_navbar {
+    width: 100%;
+    height: 55px;
+    /* border: 1px solid red; */
+    background-color: #008ecc;
+  }
+  #ka_title {
+    padding-left: 120px;
+    color: #fff;
+    font-size: 2rem;
+  }
+  #ka_beta {
+    color: #fff;
+    padding-left: 200px;
+  }
+  #ka_order {
+    margin: auto;
+    margin-top: 2%;
+    border: 1px solid red;
+    width: 90%;
+    height: 750px;
+  }
+  #ka_ordersummart {
+    border: 1px solid black;
+    height: 6%;
+    width: 95%;
+    margin: auto;
+    margin-top: 2%;
+
+    display: flex;
+    /* border-radius: 10%; */
+  }
+  #ka_ordersummart > h3 {
+    font-size: 1.5rem;
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+  #ka_cart_image {
+    width: 30px;
+  }
+  #ka_cart_image3 {
+    width: 40px;
+    padding-top: 7px;
+    background-color: transparent;
+  }
+  #ka_cart_image1 {
+    width: 30px;
+    background-color: transparent;
+    padding-top: 2%;
+  }
+  #ka_cart_image2 {
+    width: 30px;
+    padding-top: 1%;
+    background-color: transparent;
+  }
+  #ka_threelogo {
+    display: flex;
+    padding-left: 50%;
+    /* padding-top: 5px; */
+    gap: 20px;
+  }
+  .ka_logos {
+    text-decoration: none;
+    color: black;
+  }
+  #ka_Delivey_Address {
+    border: 1px solid green;
+    width: 58%;
+    height: 650px;
+    margin-left: 2.5%;
+  }
+  .ka_box {
+    color: #212529;
+    background-color: #d5d5fd;
+    width: 60%;
+    height: 200px;
+    margin-left: 7%;
+    margin-top: 3%;
+    padding-left: 9%;
+    padding-top: 3%;
+  }
+  #ka_Basket {
+    border: 1px solid teal;
+    width: 100%;
+    height: 200px;
+    margin-top: 20%;
+    background-color: #fff;
+  }
+  #ka_Payment {
+    border: 5px solid pink;
+
+    width: 35%;
+  }
+  #ka_below_order {
+    display: flex;
+    height: 400px;
+    gap: 22px;
+    /* border:1px solid blue; */
+    /* width:5%; */
+  }
+  #Adress_details {
+    position: absolute;
+    /* position: relative; */
+
+    display: none;
+    width: 23%;
+    height: 750px;
+    background-color: #fff;
+    /* border: 1px solid yellow; */
+
+    left: 70%;
+    text-align: center;
+  }
+  #ka_input {
+    margin-top: 20px;
+    width: 100%;
+    height: 30px;
+    background-color: #c3c3d6;
+  }
+  .input_feild {
+    margin-top: 20px;
+    width: 100%;
+    height: 30px;
+  }
+  .btn_box {
+    background-color: red;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    width: 20%;
+    height: 12%;
+  }
+  #ka_address_box {
+    margin-left: 68%;
+    width: 27%;
+    height: 5%;
+    border: none;
+    text-decoration: none;
+    background-color: #008ecc;
+  }
+  #ka_basket {
+    display: flex;
+    gap: 65%;
+    background-color: #fff;
+  }
+  #ka_cost {
+    margin-left: 90%;
+  }
+  #ka_itemsfromCart {
+    display: flex;
+    gap: 30px;
+    background-color: #fff;
+  }
+  #ka_itemImage {
+    width: 100px;
+    margin-left: 15px;
+  }
+  #ka_itemDetails {
+    margin-top: 20px;
+    background-color: #fff;
+    /* border: 1px solid red; */
+  }
+  #ka_prize {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #ka_add_color {
+    background-color: rgb(247, 126, 82);
+  }
+  #ka_deliver_details{
+    /* border:1px solid orangered
+     */
+     background-color: #fff;
+  }
+  #background_ka{
+    background-color: #f6f6f7;
+    /* background-color: red; */
+  }
+  /* #Adress_details>.close-{
+  display: inline-block;
+  background-color: transparent;
+  width: 12%;
+  color: white;
+  font-size: 19px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 8px 25px;
+  position: relative;
+  }
+
+
+
+
+
+
+
+  .close-.closex::after{
+  position: absolute;
+  right: 3%;
+  bottom: 8%;
+  content: "-";
+  color: white;
+  font-size: 35px;
+  }
+  .close-.closex:hover:after{
+  position: absolute;
+  right: 3%;
+  bottom: 1%;
+  content: "+";
+  color: white;
+  font-size: 34px;
+  font-weight: bolder;
+  transform: rotate(45deg);
+  } */
+  .fa-cart-minus {
+    border:1px solid red;
+    width:100%
+  }
